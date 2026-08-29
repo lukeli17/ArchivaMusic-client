@@ -22,7 +22,7 @@ export function crossFade({
 }) {
     const settings = useSettings()
 
-    cancel(audio)
+    cancelCrossFade(audio)
 
     if (audio.muted || duration < 1000 || !settings.use_crossfade) {
         audio.volume = settings.volume_gain
@@ -31,7 +31,7 @@ export function crossFade({
 
     const started_at = performance.now()
 
-    const interval = setInterval(() => {
+    const tick = () => {
         const progress = (performance.now() - started_at) / duration
 
         // read the position live so grabbing the slider mid-fade still works
@@ -39,12 +39,17 @@ export function crossFade({
         audio.volume = volumeRampGain(from, to, progress)
 
         if (progress >= 1) endCrossfade()
-    }, STEP_MS) as unknown as number
+    }
 
+    const interval = setInterval(tick, STEP_MS) as unknown as number
     running.set(audio, interval)
 
+    // apply the starting gain now — waiting for the first interval tick would let a
+    // fade-in play at full volume for STEP_MS before dropping to silence
+    tick()
+
     function endCrossfade() {
-        cancel(audio)
+        cancelCrossFade(audio)
 
         if (then_destroy) {
             audio.pause()
@@ -53,7 +58,9 @@ export function crossFade({
     }
 }
 
-function cancel(audio: HTMLAudioElement) {
+// stops any fade running on the element without destroying it, so an element being
+// re-used for a new track isn't paused or cleared by a stale fade-out
+export function cancelCrossFade(audio: HTMLAudioElement) {
     const interval = running.get(audio)
 
     if (interval !== undefined) {

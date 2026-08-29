@@ -12,7 +12,7 @@ import useTracker from './tracker'
 
 import { getBaseUrl, paths } from '@/config'
 import updateMediaNotif from '@/helpers/mediaNotification'
-import { crossFade } from '@/utils/audio/crossFade'
+import { cancelCrossFade, crossFade } from '@/utils/audio/crossFade'
 
 class AudioSource {
     private sources: HTMLAudioElement[] = []
@@ -43,6 +43,9 @@ class AudioSource {
     preloadWithUri(uri: string) {
         const audio = this.standbySource
         if (!this.settings) return audio
+        // a fade-out from a previous switch may still be running on this element and
+        // would pause it and clear the src we're about to set
+        cancelCrossFade(audio)
         audio.src = uri
         audio.muted = this.settings.mute
         audio.volume = this.settings.volume_gain
