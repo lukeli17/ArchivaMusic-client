@@ -1,22 +1,16 @@
 <template>
-    <div class="aboutswingmusic">
+    <div class="aboutarchivamusic">
         <div class="version">Archiva Music v{{ settings.version }}</div>
-        Archiva Music is a Swing Music-based project developed by
-        <a
-            href="https://github.com/cwilvx"
-            target="_blank"
-            >@<u>cwilvx</u></a
-        >
-        on GitHub. If you like this software, a star on GitHub would be nice.
-        Hope you enjoy using it as much as I enjoy building it. 😁🤗
+        Archiva Music 是面向个人音乐收藏的自托管音乐库与流媒体服务器，支持多音质、多版本音乐统一管理。
+        如果这个项目对你有帮助，欢迎在 GitHub 上点亮 Star，也欢迎提出建议。😁🤗
         <br /><br />
         <div class="links">
             <h2>Links</h2>
             <div class="flex">
                 <a
-                    href="https://swingmusic.vercel.app/guide/introduction.html"
+                    href="https://github.com/lukeli17/ArchivaMusic"
                     target="_blank"
-                    ><button>Docs</button></a
+                    ><button>项目主页</button></a
                 >
                 <a
                     href="https://github.com/lukeli17/ArchivaMusic"
@@ -24,15 +18,15 @@
                     ><button>Star on Github</button></a
                 >
                 <a
-                    href="https://github.com/cwilvx/swingmusic/issues/new/choose"
+                    href="https://github.com/lukeli17/ArchivaMusic/issues/new"
                     target="_blank"
                 >
-                    <button>Report issue</button>
+                    <button>报告问题</button>
                 </a>
                 <a
-                    href="https://github.com/cwilvx/swingmusic/blob/master/.github/contributing.md"
+                    href="https://github.com/lukeli17/ArchivaMusic/blob/master/.github/contributing.md"
                     target="_blank"
-                    ><button>Contribute</button></a
+                    ><button>参与贡献</button></a
                 >
             </div>
         </div>
@@ -61,7 +55,7 @@ const settings = useSettings()
 </script>
 
 <style lang="scss">
-.aboutswingmusic {
+.aboutarchivamusic {
     padding: $small;
 
     .version {

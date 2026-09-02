@@ -1,6 +1,6 @@
 ### Archiva Music client
 
-This repo contains the client code for [Archiva Music](https://github.com/lukeli17/ArchivaMusic), based on the [Swing Music web client](https://github.com/swingmx/webclient).
+这是 [Archiva Music](https://github.com/lukeli17/ArchivaMusic) 的 Web 客户端，用于浏览、管理和播放个人音乐收藏。
 
 ### Setup
 
