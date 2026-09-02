@@ -6,7 +6,7 @@
         </div>
         <div class="description">
             <span v-if="isFinished">Click the button below to continue to your library.</span
-            ><span v-else>Swing Music is scanning your music folders. Please wait ...</span>
+            ><span v-else>Archiva Music is scanning your music folders. Please wait ...</span>
         </div>
         <br />
         <div class="progress">

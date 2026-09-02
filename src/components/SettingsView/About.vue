@@ -1,7 +1,7 @@
 <template>
     <div class="aboutswingmusic">
-        <div class="version">Swing Music v{{ settings.version }}</div>
-        Swing Music is a labor of love developed by
+        <div class="version">Archiva Music v{{ settings.version }}</div>
+        Archiva Music is a Swing Music-based project developed by
         <a
             href="https://github.com/cwilvx"
             target="_blank"
@@ -19,7 +19,7 @@
                     ><button>Docs</button></a
                 >
                 <a
-                    href="https://github.com/cwilvx/swingmusic"
+                    href="https://github.com/lukeli17/archiva-music"
                     target="_blank"
                     ><button>Star on Github</button></a
                 >

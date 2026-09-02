@@ -23,9 +23,9 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: "Swing Music",
-        short_name: "Swing Music",
-        description: "Swing Music",
+        name: "Archiva Music",
+        short_name: "Archiva Music",
+        description: "Archiva Music",
         theme_color: "#111",
         icons: [
           {

@@ -25,7 +25,7 @@
     />
     <About v-if="currentTab?.title === 'About'" />
     <div class="version t-center">
-      <b>Swing Music - v{{ settings.version }}</b>
+      <b>Archiva Music - v{{ settings.version }}</b>
     </div>
   </div>
 </template>

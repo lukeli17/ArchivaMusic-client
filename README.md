@@ -1,6 +1,6 @@
-### Swing music client
+### Archiva Music client
 
-This repo contains the client code for the [swing music player](https://github.com/geoffrey45/swingmusic).
+This repo contains the client code for [Archiva Music](https://github.com/lukeli17/archiva-music), based on the [Swing Music web client](https://github.com/swingmx/webclient).
 
 ### Setup
 
@@ -12,9 +12,9 @@ This project requires `Node v14` or newer and `yarn@1.22.19`. Install them first
 Clone the repository and install the dependencies.
 
 ```bash
-git clone https://github.com/geoffrey45/swing-client.git
+git clone https://github.com/lukeli17/archiva-music-client.git
 
-cd swing-client
+cd archiva-music-client
 
 # Install dependencies
 yarn install

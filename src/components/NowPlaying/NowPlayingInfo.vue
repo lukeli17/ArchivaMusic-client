@@ -5,7 +5,7 @@
                 {{
                     (queue.currenttrack as ClassicalMovement)?.movement_title ??
                     (queue.currenttrack as Track)?.title ??
-                    'Swing Music'
+                    'Archiva Music'
                 }}
             </div>
             <div class="artist">

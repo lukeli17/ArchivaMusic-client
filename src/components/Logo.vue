@@ -1,5 +1,5 @@
 <template>
-  <router-link class="swing-logo rounded-md" :to="{ name: 'Home' }"> <LogoSvg /> <span>Swing Music</span> </router-link>
+  <router-link class="swing-logo rounded-md" :to="{ name: 'Home' }"> <LogoSvg /> <span>Archiva Music</span> </router-link>
 </template>
 
 <script setup lang="ts">

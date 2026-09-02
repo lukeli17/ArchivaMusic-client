@@ -3,7 +3,7 @@
         <div class="sidenav_header">
             <a @click="closeSidenav" class="sidenav_logo" href="#">
                 <div class="art"><LogoSvg /></div>
-                <div class="title">Swing Music</div>
+                <div class="title">Archiva Music</div>
             </a>
         </div>
         <div class="sidenav_content scrollable">
@@ -20,7 +20,7 @@
                 <span>{{ link.name }}</span>
             </RouterLink>
         </div>
-        <div class="sidenav_footer">Swing Music - v</div>
+        <div class="sidenav_footer">Archiva Music - v</div>
     </div>
 </template>
 

@@ -12,7 +12,7 @@
             <div class="spinner"></div>
         </div>
         <p class="desc">
-            Scan the QR code from the Swing Music app to pair with this server.
+            Scan the QR code from the Archiva Music app to pair with this server.
         </p>
 
         <div class="serverurl rounded">{{ url }}</div>

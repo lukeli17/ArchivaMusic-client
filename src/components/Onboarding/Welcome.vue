@@ -2,7 +2,7 @@
     <div class="welcome">
         <div class="logo"><LogoSvg /></div>
         <div class="heading">Welcome to</div>
-        <div class="appname">Swing Music</div>
+        <div class="appname">Archiva Music</div>
         <p class="tagline">
             Click the button below to let's create your account <br />
             <!-- and configure your music folders to get started. -->

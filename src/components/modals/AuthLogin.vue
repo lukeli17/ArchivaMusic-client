@@ -194,7 +194,7 @@ onMounted(async () => {
         }
 
         .back2 {
-            // NOTE: This element is used to center the Swing Music logo
+            // NOTE: This element is used to center the Archiva Music logo
             visibility: hidden;
         }
     }

@@ -9,15 +9,15 @@
                 <div class="header">
                     <b
                         ><span v-if="!licenseInfo">GitHub Sponsor Benefits</span
-                        ><span v-else>Thank you for sponsoring Swing Music!</span></b
+                        ><span v-else>Thank you for supporting Archiva Music!</span></b
                     >
                 </div>
                 <div class="desc">
                     <span v-if="!licenseInfo">
-                        Swing Music Premium is available to all our GitHub Sponsors. Log in with GitHub to get access.
+                        Archiva Music Premium is available to eligible supporters. Log in with GitHub to get access.
                     </span>
                     <span v-else>
-                        Hello @{{ licenseInfo.customer.name }}! You have access to Swing Music Premium. <br />
+                        Hello @{{ licenseInfo.customer.name }}! You have access to Archiva Music Premium. <br />
                         Thank you for your support. ❤️❤️</span
                     >
 

@@ -2,7 +2,7 @@
     <FilePicker v-if="showFilePicker" :userhome="userHome" @submitDirs="handleSubmitDirs" @cancel="toggleFilePicker" />
     <div v-else class="rootdirconfig">
         <div class="heading">Configure music folders</div>
-        <div class="description">Where do you want Swing Music to look for music?</div>
+        <div class="description">Where do you want Archiva Music to look for music?</div>
         <br />
         <div class="options">
             <div class="option" tabindex="0" @click="toggleHomeDir" @keydown="handleKeyDown($event, toggleHomeDir)">
