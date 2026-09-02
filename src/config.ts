@@ -9,7 +9,7 @@ export function getBaseUrl() {
 
     const base_url = window.location.origin
     const splits = base_url.split(':')
-    return base_url.replace(splits[splits.length - 1], '1980')
+    return base_url.replace(splits[splits.length - 1], '1718')
 }
 
 const base_url = getBaseUrl()

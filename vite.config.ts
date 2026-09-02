@@ -10,6 +10,11 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 const path = require("path");
 
 export default defineConfig({
+  server: {
+    host: "127.0.0.1",
+    port: 1719,
+    strictPort: true,
+  },
   define: {
     __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false'
   },

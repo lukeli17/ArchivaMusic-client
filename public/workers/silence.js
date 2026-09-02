@@ -1,8 +1,8 @@
 onmessage = async e => {
     const { ending_trackhash, ending_file, starting_trackhash, starting_file } = e.data
 
-    const is_dev = location.port === '5173'
-    const base_url = is_dev ? 'http://localhost:1980' : location.origin
+    const is_dev = location.port === '1719'
+    const base_url = is_dev ? 'http://localhost:1718' : location.origin
     const url = base_url + '/file/silence'
 
     const res = await fetch(url, {

@@ -6,9 +6,9 @@ let reconnectAttempts = 0
 let maxReconnectAttempts = 10
 let isConnected = false
 
-const is_dev = location.port === '5173'
+const is_dev = location.port === '1719'
 const protocol = location.protocol.replace(':', '')
-const base_url = is_dev ? `${protocol}://${location.hostname}:1980` : location.origin
+const base_url = is_dev ? `${protocol}://${location.hostname}:1718` : location.origin
 const sse_url = base_url + '/events/stream'
 
 function connect() {
