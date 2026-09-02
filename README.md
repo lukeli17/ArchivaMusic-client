@@ -2,32 +2,32 @@
 
 这是 [Archiva Music](https://github.com/lukeli17/ArchivaMusic) 的 Web 客户端，用于浏览、管理和播放个人音乐收藏。
 
-### Setup
+## 开发环境
 
-This project requires `Node v14` or newer and `yarn@1.22.19`. Install them first.
+本项目需要 `Node v14` 或更高版本，以及 `yarn@1.22.19`。请先安装：
 
-- [NodeJS](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com)
 
-Clone the repository and install the dependencies.
+克隆仓库并安装依赖：
 
 ```bash
 git clone https://github.com/lukeli17/ArchivaMusic-client.git
 
 cd ArchivaMusic-client
 
-# Install dependencies
+# 安装依赖
 yarn install
 
-# Start the development server
+# 启动开发服务器，端口为 1719
 yarn dev
 
-# Build the project
+# 构建前端文件
 yarn build
 ```
 
 ---
-### Generating PWA favicons
+## 生成 PWA 图标
 
 ```sh
 yarn generate-pwa-assets
@@ -35,10 +35,10 @@ yarn generate-pwa-assets
 ---
 
 
-### Contributing
+## 参与贡献
 
-If you want to contribute to this project, feel free to open a pull request with you changes. All bug reports and contributions are welcome.
+欢迎提交问题反馈、功能建议和 Pull Request。
 
 ---
 
-**[MIT License](https://opensource.org/licenses/MIT) | Copyright (c) 2023 Mungai Njoroge**
+**[MIT 许可证](https://opensource.org/licenses/MIT) | Copyright (c) 2023 Mungai Njoroge**
