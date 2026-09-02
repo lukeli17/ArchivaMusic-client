@@ -19,7 +19,7 @@
                     ><button>Docs</button></a
                 >
                 <a
-                    href="https://github.com/lukeli17/archiva-music"
+                    href="https://github.com/lukeli17/ArchivaMusic"
                     target="_blank"
                     ><button>Star on Github</button></a
                 >
