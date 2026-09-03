@@ -12,7 +12,7 @@ const path = require("path");
 export default defineConfig({
   server: {
     host: "127.0.0.1",
-    port: 1719,
+    port: 7019,
     strictPort: true,
   },
   define: {

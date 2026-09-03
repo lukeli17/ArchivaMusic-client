@@ -19,7 +19,7 @@ cd ArchivaMusic-client
 # 安装依赖
 yarn install
 
-# 启动开发服务器，端口为 1719
+# 启动开发服务器，端口为 7019
 yarn dev
 
 # 构建前端文件
